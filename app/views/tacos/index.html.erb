@@ -1,0 +1,22 @@
+<h1>I love tacos!</h1>
+<p>There are so many delish tacos!</p>
+
+<%
+ fillings = ["Carnitas", "Al Pastor", "Steak"]
+%>
+
+<p>Currently, there are <%= fillings.count %> kinds of tacos:</p>
+<ul>
+    <!--<li>Carnitas</li> -->
+    <li><%= fillings[0] %></li>
+    <li><%= fillings[1] %></li>
+    <li><%= fillings[2] %></li>
+    
+    <% for taco in fillings %>
+        <li><%= taco %></li>
+    <% end %>
+<ul>
+<tl>What about you?</tl>
+<a>Perhaps we can eat tacos together.</a>
+<b>Do you want to do it?</b>
+<c>Yes, I do</c>
